@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Coot | Portafolio Ingeniería</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Antonio Coot</h1>
+            <p>Ingeniería en Sistemas | Desarrollo & 3D</p>
+            <img src="assets/Foto.png" alt="Foto de Antonio Coot" class="avatar">
+            <div id="threejs-container"></div>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p>Soy estudiante de ingeniería enfocado en software y sistemas. Me apasiona crear experiencias interactivas integrando modelos 3D y animaciones fluidas.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Flutter</div>
+                <div class="skill-card">Three.js</div>
+                <div class="skill-card">Blender</div>
+                <div class="skill-card">Redes (Cisco)</div>
+                <div class="skill-card">Windows Server</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project-container">
+                <h3>Animación Rive: Login Machine</h3>
+                <canvas id="rive-canvas" width="400" height="400"></canvas>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="mailto:tu-correo@ejemplo.com">Correo</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Antonio Coot - Ingeniería en Sistemas</p>
+    </footer>
+
+    <script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/examples/jsm/loaders/GLTFLoader.js": "https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
