@@ -3,78 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antonio Coot | Portafolio Ingeniería</title>
+    <title>Antonio Coot | Portfolio 3D</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="custom-cursor"></div>
-
     <header>
         <nav>
             <ul>
-                <li><a href="#about">Sobre Mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                <li><a href="#escenario-3d">MI SETUP</a></li>
+                <li><a href="#habilidades">HABILIDADES</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <h1>Antonio Coot</h1>
-            <p>Ingeniería en Sistemas | Desarrollo & 3D</p>
-            <img src="assets/Foto.png" alt="Foto de Antonio Coot" class="avatar">
-            <div id="threejs-container"></div>
+        <section id="inicio">
+            <div class="intro-header">
+                <img src="assets/Foto.png" alt="Foto de Antonio Coot" class="avatar">
+                <div>
+                    <h1 class="neon-text">Antonio Coot</h1>
+                    <p>Ingeniería en Sistemas | Desarrollo de Software & Modelado 3D</p>
+                </div>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>Sobre Mí</h2>
-            <p>Soy estudiante de ingeniería enfocado en software y sistemas. Me apasiona crear experiencias interactivas integrando modelos 3D y animaciones fluidas.</p>
+        <section id="sobre-mi">
+            <h2 class="section-title">SOBRE MÍ</h2>
+            <div class="card">
+                <p>Soy estudiante de Ingeniería en Sistemas Computacionales, amante del buen café y apasionado por fusionar la lógica del desarrollo de software con la libertad del diseño digital. Con una profunda fascinación por crear entornos 3D, disfruto modelando y optimizando mundos virtuales en Blender para luego darles vida en la web con Three.js. Creo firmemente que la ingeniería y la alta creatividad se complementan perfectamente para construir experiencias interactivas e inmersivas que rompen por completo el molde clásico.</p>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>Habilidades</h2>
+        <section id="escenario-3d">
+            <h2 class="section-title">MI SETUP 3D</h2>
+            <div id="container-3d"></div>
+            <button id="btn-luces" class="btn-action">CAMBIAR AMBIENTE</button>
+        </section>
+
+        <section id="habilidades">
+            <h2 class="section-title">HABILIDADES TÉCNICAS</h2>
             <div class="skills-grid">
-                <div class="skill-card">Flutter</div>
                 <div class="skill-card">Three.js</div>
                 <div class="skill-card">Blender</div>
-                <div class="skill-card">Redes (Cisco)</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Flutter & Dart</div>
                 <div class="skill-card">Windows Server</div>
+                <div class="skill-card">SQL Relational Modeling</div>
             </div>
         </section>
 
-        <section id="projects">
-            <h2>Proyectos</h2>
-            <div class="project-container">
-                <h3>Animación Rive: Login Machine</h3>
-                <canvas id="rive-canvas" width="400" height="400"></canvas>
+        <section id="proyectos">
+            <h2 class="section-title">PROYECTOS</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="assets/oso.gif" alt="Oso animado proyecto" class="project-image">
+                    <div class="project-info">
+                        <h3>Oso Animado</h3>
+                        <p>Un login animado en Flutter con Rive donde el personaje sigue el cursor en el email, se tapa los ojos con la contraseña y reacciona distinto según el resultado del inicio de sesión. Una pequeña demo de UI/UX interactiva que hace la experiencia más divertida.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="project-thumbnails">
+                <div class="thumbnail-card">
+                    <img src="assets/Captura%20de%20pantalla%202026-05-15%20172616.png" alt="Captura de ambiente completo 1" class="thumbnail-image">
+                    <p>Vista del setup completo con iluminación y texturas.</p>
+                </div>
+                <div class="thumbnail-card">
+                    <img src="assets/Captura%20de%20pantalla%202026-05-15%20172736.png" alt="Captura de ambiente completo 2" class="thumbnail-image">
+                    <p>Otra perspectiva del proyecto en Blender para el modelo 3D.</p>
+                </div>
+            </div>
+            <div class="project-note">
+                <p>¿Te interesa el setup 3D completo con iluminación real, texturas profesionales y acabado cinematográfico? Escríbeme y te paso el modelo completo listo para visualizar en alta calidad.</p>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contacto</h2>
+        <footer id="contacto">
+            <h2 class="section-title">CONTACTO</h2>
             <div class="social-links">
-                <a href="#">GitHub</a>
-                <a href="#">LinkedIn</a>
-                <a href="mailto:tu-correo@ejemplo.com">Correo</a>
+                <a href="https://github.com/AntonioCoot" target="_blank" class="social-btn">GitHub</a>
+                <a href="#" target="_blank" class="social-btn">LinkedIn</a>
+                <a href="mailto:antonio.coot@ejemplo.com" class="social-btn">Correo</a>
             </div>
-        </section>
+            <p>© 2026 Antonio Coot | Diseñado con Three.js y Blender</p>
+        </footer>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Antonio Coot - Ingeniería en Sistemas</p>
-    </footer>
-
-    <script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/examples/jsm/loaders/GLTFLoader.js": "https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js"
-            }
-        }
-    </script>
     <script type="module" src="main.js"></script>
 </body>
 </html>
