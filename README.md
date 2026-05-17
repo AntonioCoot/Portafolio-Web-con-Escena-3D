@@ -1,80 +1,75 @@
 
-# Antonio Coot — 3D Portfolio 🎛️✨
+# Antonio Coot — 3D Programmer Setup Portfolio
 
-Welcome to my interactive 3D portfolio. This project showcases a programmer's desk / setup modelled in Blender and published to the web using Three.js. It demonstrates 3D export, GLB integration, scene controls (orbit/zoom) and a small interactive UI.
+Welcome to my interactive portfolio. This web project showcases a programmer desk setup modelled in Blender and published on the web using Three.js.
 
-## Demo
+## What this project includes
 
-- Open `index.html` in a browser (see run instructions below).
+- Responsive personal portfolio page with semantic HTML sections
+- Interactive 3D Blender scene loaded as GLB using `GLTFLoader`
+- OrbitControls: rotate, zoom, and move the camera
+- Interactive UI buttons: change lighting environment and toggle automatic rotation
+- Modern dark theme using CSS Flexbox and responsive design
+- English documentation with a clear project structure
 
-## Highlights
+## 3D Setup elements
 
-- Modern HTML / CSS / JavaScript
-- 3D scene exported from Blender (GLB)
-- Three.js integration with `GLTFLoader` and `OrbitControls`
-- Simple UI interactions (light toggle / environment switch)
-- Project preview GIF and screenshots
-- In-progress Oxxo convenience store project preview
+The scene includes the following desktop setup components:
 
-## 3D Elements (what's included)
+1. **Desk**
+2. **PC / Monitor**
+3. **Keyboard**
+4. **Mouse**
+5. **Desk fan**
+6. **Chair / computer base**
+7. **Creative desk accessory**
 
-- 🛠️ **Desk** — created by me (main desk geometry and materials)
-- 🌀 **Fan** — imported (third-party asset integrated in the scene)
-- 🖥️ **Monitor** — created by me (screen, bezel and stand)
-- ☎️ **Landline Phone** — imported (decorative prop)
-- ⌨️ **Keyboard** — imported (input prop)
-- 🪑 **Chair** — imported (seat used in composition)
-- 🖱️ **Mouse** — imported (desk prop)
-- 🖼️ **Posters** — created by me (I used textures to paint and place posters on walls)
-- 💻 **Laptop / PC** — created by me (main computer model in the scene)
+> The model is exported from Blender as a `.glb` file and the original `.blend` file is included for review.
 
-> Note: The list above identifies which assets I modelled myself and which were imported. The source `.blend` for the scene is included so instructors can inspect and open the original Blender file.
+## Repo files
 
-## Included files
-
-- `index.html` — main page
-- `style.css` — styling
-- `main.js` — Three.js scene and logic
-- `assets/3d/FNAFFINALOPTIMIZACION.glb` — exported GLB used by the site
-- `assets/3d/FNAFFINALOPTIMIZACION.blend` — Blender source file (scene and models)
+- `index.html` — portfolio page structure
+- `style.css` — styling and responsive layout
+- `script.js` — Three.js integration and interactive behavior
+- `assets/3d/FNAFFINALOPTIMIZACION.glb` — exported 3D model
+- `assets/3d/FNAFFINALOPTIMIZACION.blend` — original Blender source
 - `assets/Foto.png` — profile avatar
-- `assets/oso.gif` — project preview GIF
-- `assets/proyecto no terminado.png` — in-progress Oxxo convenience store preview
-- screenshots in `assets/` for quick previews
+- `assets/oso.gif` — Rive-inspired animated project preview
+- `assets/proyecto no terminado.png` — in-progress Oxxo store preview
+- screenshot images and assets for portfolio presentation
 
-## Run locally (quick)
+## How to run locally
 
-The easiest way is to run a tiny HTTP server from the project root because some browsers block `file://` GLB requests.
-
-Python 3 built-in server:
+Some browsers block local `file://` WebGL asset loads, so use a local HTTP server:
 
 ```bash
-python -m http.server 8000
+py -m http.server 8000
 # Open http://localhost:8000 in your browser
 ```
 
-Or with Node.js (if you have `serve`):
+Or with Node.js:
 
 ```bash
 npx serve .
-# then open the provided URL
 ```
 
-## Deploy
+## Deployment
 
-- GitHub Pages: enable Pages on the repository (branch `main` / folder `/root`).
-- Netlify / Vercel: drag & drop or connect the repo and set build to `none` (static site). Both will serve `index.html` automatically.
+The repository is prepared for GitHub Pages deployment. The site is now live and available at:
 
-## Notes for reviewers / instructors
+**https://antoniocoot.github.io/Portafolio-Web-con-Escena-3D/**
 
-- The Blender source is included so you can inspect topology, materials and texture links.
-- If you want the complete high-quality package (textures, baked maps, lighting settings exported as textures), contact me and I will share the full archive and guidance for rendering.
+If you are viewing this from GitHub, you can access the live portfolio directly using the link above.
+
+## Notes
+
+- The 3D scene uses Three.js with `OrbitControls` for interaction.
+- The page includes required portfolio sections: name, avatar, about, skills, projects, and contact.
+- The GLB and Blender files are included in `/assets/3d/`.
 
 ## Contact
 
-- Email: antonio.coot@ejemplo.com
 - GitHub: https://github.com/AntonioCoot
+- Email: antonio.coot@ejemplo.com
 
----
-
-Thank you for reviewing — I enjoyed building the setup and bringing it to the web. 🚀
+Thank you for viewing this build — I enjoyed combining Blender modeling with web interaction.
