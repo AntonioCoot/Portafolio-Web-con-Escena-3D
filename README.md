@@ -1,75 +1,135 @@
 
-# Antonio Coot — 3D Programmer Setup Portfolio
+# 🎮 Antonio Coot — 3D Programmer Setup Portfolio
 
-Welcome to my interactive portfolio. This web project showcases a programmer desk setup modelled in Blender and published on the web using Three.js.
+![Portfolio Preview](assets/Captura%20de%20pantalla%202026-05-15%20172616.png)
 
-## What this project includes
+Welcome to my interactive portfolio. This web project showcases a fully modeled programmer desk setup created in **Blender** and brought to life on the web with **Three.js**. Explore an immersive 3D environment with interactive controls, dynamic lighting, and a modern design aesthetic.
 
-- Responsive personal portfolio page with semantic HTML sections
-- Interactive 3D Blender scene loaded as GLB using `GLTFLoader`
-- OrbitControls: rotate, zoom, and move the camera
-- Interactive UI buttons: change lighting environment and toggle automatic rotation
-- Modern dark theme using CSS Flexbox and responsive design
-- English documentation with a clear project structure
+## ✨ What this project includes
 
-## 3D Setup elements
+- 🎨 **Interactive 3D Scene** - A complete programmer's setup modeled in Blender
+- 🔄 **Responsive Design** - Works seamlessly across all devices
+- 🌐 **Three.js Integration** - GLB model loaded with `GLTFLoader` for web rendering
+- 🎯 **Orbit Controls** - Rotate, zoom, and navigate the 3D environment
+- 💡 **Dynamic Lighting** - Switch between different environmental lighting setups
+- 🔁 **Auto-Rotation Mode** - Automated camera movement for presentation
+- 🌙 **Dark Theme** - Modern aesthetic with CSS Flexbox and accessibility
 
-The scene includes the following desktop setup components:
+## 🖥️ 3D Setup Elements
 
-1. **Desk**
-2. **PC / Monitor**
-3. **Keyboard**
-4. **Mouse**
-5. **Desk fan**
-6. **Chair / computer base**
-7. **Creative desk accessory**
+The scene includes an authentic programmer's workspace with detailed components:
 
-> The model is exported from Blender as a `.glb` file and the original `.blend` file is included for review.
+| Component | Description |
+|-----------|-------------|
+| 📋 **Desk** | Modern workspace surface |
+| 💻 **PC / Monitor** | Multi-monitor professional setup |
+| ⌨️ **Keyboard** | Mechanical keyboard precision |
+| 🖱️ **Mouse** | Ergonomic pointing device |
+| 🌀 **Desk Fan** | Cooling and ambiance |
+| 🪑 **Chair** | Comfortable workstation seating |
+| 🎁 **Creative Accessories** | Decorative desk items |
 
-## Repo files
+> The model is professionally exported from Blender as a `.glb` file with full materials and textures preserved. The original `.blend` file is included for review and further development.
 
-- `index.html` — portfolio page structure
-- `style.css` — styling and responsive layout
-- `script.js` — Three.js integration and interactive behavior
-- `assets/3d/FNAFFINALOPTIMIZACION.glb` — exported 3D model
-- `assets/3d/FNAFFINALOPTIMIZACION.blend` — original Blender source
-- `assets/Foto.png` — profile avatar
-- `assets/oso.gif` — Rive-inspired animated project preview
-- `assets/proyecto no terminado.png` — in-progress Oxxo store preview
-- screenshot images and assets for portfolio presentation
+## 📁 Project Structure
 
-## How to run locally
+```
+📦 Portafolio-Web-con-Escena-3D
+├── 📄 index.html                          # Main portfolio page
+├── 🎨 style.css                           # Styling & responsive layout
+├── ⚙️ script.js                           # Three.js integration
+├── 📖 README.md                           # Documentation
+└── 📁 assets/
+    ├── 📁 3d/
+    │   ├── 🎮 FNAFFINALOPTIMIZACION.glb  # Exported 3D model
+    │   └── 🎨 FNAFFINALOPTIMIZACION.blend # Blender source
+    ├── 🖼️ Foto.png                        # Profile avatar
+    ├── 🎬 oso.gif                         # Project preview animation
+    └── 📸 Screenshots                     # Portfolio showcase images
+```
 
-Some browsers block local `file://` WebGL asset loads, so use a local HTTP server:
+## 🚀 Featured Projects
 
+### 🐻 Animated Bear Login
+![Oso Animado](assets/oso.gif)
+
+*Interactive login experience with animated character response in Flutter + Rive*
+
+A creative take on user authentication where the character follows your cursor during email input, covers eyes during password entry, and reacts differently based on login success or failure. Perfect example of UI/UX interactivity.
+
+### 🏪 Oxxo Store (In Development)
+![Oxxo Store Preview](assets/proyecto%20no%20terminado.png)
+
+*Convenience store 3D modeling project*
+
+Currently features base design and main structure. Future updates will include realistic lighting, product shelves, and detailed merchandising.
+
+---
+
+## 📸 Gallery
+
+### Complete Setup Views
+
+<table>
+  <tr>
+    <td><img src="assets/Captura%20de%20pantalla%202026-05-15%20172616.png" alt="Setup View 1" width="400"/></td>
+    <td><img src="assets/Captura%20de%20pantalla%202026-05-15%20172736.png" alt="Setup View 2" width="400"/></td>
+  </tr>
+  <tr>
+    <td><em>Complete setup with lighting and textures</em></td>
+    <td><em>Alternative perspective from Blender modeling</em></td>
+  </tr>
+</table>
+
+## 🏃 How to Run Locally
+
+> **Note:** Browsers block local `file://` WebGL asset loads. Use a local HTTP server:
+
+### Python
 ```bash
 py -m http.server 8000
 # Open http://localhost:8000 in your browser
 ```
 
-Or with Node.js:
-
+### Node.js
 ```bash
 npx serve .
+# Server will start at http://localhost:5000
 ```
 
-## Deployment
+## 🌐 Deployment
 
-The repository is prepared for GitHub Pages deployment. The site is now live and available at:
+The repository is prepared for **GitHub Pages** deployment. The site is live and available at:
 
-**https://antoniocoot.github.io/Portafolio-Web-con-Escena-3D/**
+📍 **https://antoniocoot.github.io/Portafolio-Web-con-Escena-3D/**
 
-If you are viewing this from GitHub, you can access the live portfolio directly using the link above.
+Access the live portfolio directly using the link above!
 
-## Notes
+## ⚙️ Technical Stack
 
-- The 3D scene uses Three.js with `OrbitControls` for interaction.
-- The page includes required portfolio sections: name, avatar, about, skills, projects, and contact.
-- The GLB and Blender files are included in `/assets/3d/`.
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **3D Rendering:** Three.js, GLTF Loader
+- **3D Modeling:** Blender (source files included)
+- **Styling:** CSS Flexbox & Grid, Responsive Design
+- **Animation:** Three.js OrbitControls
+- **Other Projects:** Flutter, Rive, SQL Relational Modeling
 
-## Contact
+## 📝 Notes
 
-- GitHub: https://github.com/AntonioCoot
-- Email: antonio.coot@ejemplo.com
+- ✅ The 3D scene uses Three.js with OrbitControls for full interactive navigation
+- ✅ All portfolio sections included: intro, about, skills, projects, contact
+- ✅ GLB and Blender source files included in `/assets/3d/`
+- ✅ Mobile-responsive design for seamless viewing on all devices
+- ✅ Dark theme with neon accents for modern aesthetic
 
-Thank you for viewing this build — I enjoyed combining Blender modeling with web interaction.
+## 📞 Contact & Connect
+
+Feel free to reach out through any of these channels:
+
+- 🐙 **GitHub:** [AntonioCoot](https://github.com/AntonioCoot)
+- 🎮 **Steam:** [Profile Link](https://steamcommunity.com/profiles/76561199079715500/)
+- 📧 **Email:** LE24080151@merida.tecnm.mx
+
+---
+
+✨ **Thank you for exploring this portfolio!** I had a blast combining Blender's modeling power with Three.js interactivity to create this immersive web experience. Feel free to explore, interact with the 3D scene, and reach out with feedback or collaboration opportunities!
