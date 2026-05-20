@@ -6,6 +6,10 @@ const container = document.getElementById('container-3d');
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x0b1220);
 
+// Cache-busting model URL using current commit short SHA (update on each push)
+const MODEL_VERSION = '84d1413';
+const MODEL_URL = `./assets/3d/FNAFFINALOPTIMIZACION.glb?v=${MODEL_VERSION}`;
+
 const camera = new THREE.PerspectiveCamera(60, container.clientWidth / container.clientHeight, 0.1, 5000);
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
 renderer.setSize(container.clientWidth, container.clientHeight);
@@ -39,7 +43,7 @@ let autoRotate = false;
 
 const loader = new GLTFLoader();
 loader.load(
-    './assets/3d/FNAFFINALOPTIMIZACION.glb',
+    MODEL_URL,
     (gltf) => {
         loadedModel = gltf.scene;
         scene.add(loadedModel);
